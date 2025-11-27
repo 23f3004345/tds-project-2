@@ -1,0 +1,16 @@
+{
+  "phases": {
+    "setup": {
+      "nixPkgs": ["python310", "playwright-driver-chromium"]
+    },
+    "install": {
+      "cmds": [
+        "pip install -r requirements.txt",
+        "playwright install chromium --with-deps"
+      ]
+    },
+    "start": {
+      "cmd": "python main.py"
+    }
+  }
+}
