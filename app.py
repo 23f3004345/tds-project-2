@@ -95,7 +95,6 @@ def health_check() -> str:
 # Create Gradio interface
 with gr.Blocks(
     title="TDS Project 2 - Quiz Solver",
-    theme=gr.themes.Soft(),
     css=".gradio-container {max-width: 800px; margin: auto;}"
 ) as demo:
     
