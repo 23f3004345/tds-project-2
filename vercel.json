@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
+  ],
+  "env": {
+    "LLM_PROVIDER": "iitm",
+    "IITM_API_BASE_URL": "https://llm.iitm.ac.in/v1",
+    "MODEL": "gpt-4-turbo-preview",
+    "MAX_RETRIES": "3",
+    "TIMEOUT_SECONDS": "180",
+    "EMAIL": "23f3004345@ds.study.iitm.ac.in",
+    "SECRET": "my-secure-secret-123"
+  }
+}
