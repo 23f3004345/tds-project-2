@@ -1,0 +1,22 @@
+app = "tds-project-2"
+primary_region = "iad"
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[env]
+  PORT = "8080"
+  HOST = "0.0.0.0"
+  LLM_PROVIDER = "iitm"
+  IITM_API_BASE_URL = "https://llm.iitm.ac.in/v1"
+  MODEL = "gpt-4-turbo-preview"
+  MAX_RETRIES = "3"
+  TIMEOUT_SECONDS = "180"
+  EMAIL = "23f3004345@ds.study.iitm.ac.in"
+  SECRET = "my-secure-secret-123"
