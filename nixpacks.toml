@@ -6,7 +6,10 @@ cmds = [
   "python3 -m venv /opt/venv",
   "/opt/venv/bin/pip install --upgrade pip",
   "/opt/venv/bin/pip install -r requirements.txt",
-  "apt-get update && apt-get install -y libasound2t64 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libgtk-3-0 libnspr4 libnss3 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libxss1 libasound2-data",
+  "apt-get update",
+  "apt-get install -y libasound2t64 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2",
+  "apt-get install -y libgtk-3-0 libnspr4 libnss3 libxcomposite1 libxdamage1",
+  "apt-get install -y libxrandr2 libgbm1 libxss1 libasound2-data",
   "/opt/venv/bin/playwright install chromium"
 ]
 
