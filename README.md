@@ -1,14 +1,32 @@
-# LLM Analysis Quiz Application
+---
+title: TDS Project 2 Quiz Solver
+emoji: 🧠
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+license: mit
+---
 
-> **TDS Project 2**: Automated quiz-solving system using LLMs for data analysis tasks
+# TDS Project 2 - Quiz Solver API
 
-An intelligent application that automatically solves data analysis quizzes involving sourcing, preparation, analysis, and visualization using Large Language Models.
+LLM-powered quiz solving service using IIT Madras AI Pipeline.
 
-## 🚀 **[START HERE →](START_HERE.md)** | First time? Read this first!
+## Features
+- FastAPI backend with Gradio interface
+- IIT Madras AI integration  
+- Simplified browser handling (aiohttp + BeautifulSoup)
+- Optimized for Hugging Face Spaces
 
-## 🎯 Features
+## Usage
+Access the API endpoints:
+- `/health` - Health check
+- `/quiz` - Solve quiz (POST)
 
-- **API Endpoint**: FastAPI server accepting POST requests with quiz tasks
+## Deployment
+Deployed on Hugging Face Spaces for reliable uptime during evaluation.
 - **Browser Automation**: Playwright-based JavaScript rendering and file downloads
 - **LLM Integration**: OpenAI GPT models for intelligent task solving
 - **Multi-step Solver**: Chains through multiple quizzes automatically
