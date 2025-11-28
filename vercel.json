@@ -12,6 +12,11 @@
       "dest": "api/index.py"
     }
   ],
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 30
+    }
+  },
   "env": {
     "LLM_PROVIDER": "iitm",
     "IITM_API_BASE_URL": "https://llm.iitm.ac.in/v1",
